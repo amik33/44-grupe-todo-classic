@@ -1,3 +1,49 @@
 .app {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem ;
+}
+.platform {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem ;
+    padding: 4.5rem 1rem;
+    align-items: center;
+    border-radius: 2rem;
+}
+.future {
     background-color: beige;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem ;
+    padding: 4.5rem 6rem;
+    border-radius: 2rem;
+}
+a {
+    display: flex;
+    justify-content: flex-end;
+}
+.section {  
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+}
+.button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+    background-color: green;
+    color: black;
+    line-height: 0.2rem;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    border: 0.1rem solid green;
+}
+.button:hover {
+    background-color: white;
+    color:black;
 }
