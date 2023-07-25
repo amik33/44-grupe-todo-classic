@@ -1,3 +1,24 @@
-.future {
-    background-color: azure;
+.footer {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: #bbf;
+    color: #fff;
+    padding: 3rem;
+}
+.main {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: #bbf;
+    color: #fff;
+    padding: 3rem;
+}
+.header {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    padding: 3rem;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.5rem;
 }

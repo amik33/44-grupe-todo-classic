@@ -1,6 +1,7 @@
 import style from './Login.module.css';
 import { useState } from "react";
 
+
 export function Login () {
     const [name, setName] = useState('');
     const [surname, setSurname] = useState('');
@@ -33,6 +34,5 @@ export function Login () {
             <div className={style.preview}>"{fullname}"</div> 
         </div>
   );
-
 
 }
