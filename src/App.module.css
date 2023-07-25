@@ -1,4 +1,4 @@
-.app {
+/* .app {
     display: flex;
     flex-direction: column;
     padding: 0.5rem ;
@@ -25,7 +25,7 @@ a {
     justify-content: flex-end;
 }
 .section {  
-    /* background-color: yellow; */
+    background-color: yellow;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -46,4 +46,35 @@ a {
 .button:hover {
     background-color: white;
     color:black;
+} */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+
+.form {
+    display: grid;
+    gap: 1rem;
+}
+.form .row {
+    display: grid;
+    gap: 0.5rem;
+}
+.form label {
+    font-size: 2rem;
+}
+.form input {
+    padding: 0.3rem 0.5rem;
+    font-size: 2rem;
+}
+.form button {
+    padding: 0.3rem 0.5rem;
+    font-size: 2rem;
+}
+
+.preview {
+    font-size: 2rem;
 }
