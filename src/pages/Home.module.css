@@ -1,8 +1,6 @@
 .home {
     display: flex;
-    width: 100%;
     flex-direction: column;
-    justify-content: space-between;
     gap: 3rem;
     padding: 3rem;
     align-items: center;
@@ -15,7 +13,6 @@ h1 {
     font-size: 2rem;
     padding: 2rem;
     text-align: center;
-
 }
 h3 {
     font-size: 1.5rem;
@@ -37,12 +34,12 @@ p {
     display: inline-block;
     font-size: 1rem;
     padding: 1rem 2.5rem;
-    background-color: green;
+    background-color:#00BF63;
     color: black;
     line-height: 0.2rem;
     text-decoration: none;
     border-radius: 0.6rem;
-    border: 0.1rem solid green;
+    border: 0.1rem solid #0B0019;
 }
 .button:hover {
     background-color: white;

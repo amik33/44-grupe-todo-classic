@@ -1,37 +1,47 @@
 import style from './Login.module.css';
 import { useState } from "react";
-
+import { Link } from 'react-router-dom';
 
 export function Login () {
     const [name, setName] = useState('');
-    const [surname, setSurname] = useState('');
-    const fullname = `${name} ${surname}`.trim();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    // const registr = `${name} ${email} ${password}`.trim();
   
     function updateName(event) {
       setName(event.target.value);
     }
   
-    function updateSurname(event) {
-      setSurname(event.target.value);
+    function updateEmail(event) {
+      setEmail(event.target.value);
     }
 
+    function updatePassword(event) {
+        setPassword(event.target.value);
+      }
+
     return (
-        <div className={style.app}>
+        <div className={style.login}>
             <form className={style.form}>
+                <h3>Create your account</h3>
                 <div className={style.row}>
-                    <label htmlFor='name'>Name</label>
                     <input onChange={updateName} value={name} id='name' type='text' placeholder='Name...' />
                 </div>
-            <div className={style.row}>
-                <label htmlFor='surname'>Surname</label>
-                <input onChange={updateSurname} value={surname} id='surname' type='text' placeholder='Surname...' />
-            </div>
-            <div className={style.row}>
-                <button type='submit'>Create</button>
-            </div>
+                <div className={style.row}>
+                    <input onChange={updateEmail} value={email} id='email' type='text' placeholder='Email...' />
+                </div>
+                <div className={style.row}>
+                    <input onChange={updatePassword} value={password} id='spassword' type='text' placeholder='Password...' />
+                </div>
+                <div className={style.read}>
+                    <Link className={style.btn} to='/team'></Link>
+                    <p>Agree to our TOS (read)</p>
+                </div>
+                <div className={style.row}>
+                    <Link className={style.button} to='/login'>Register</Link>
+                    <Link className={style.button} to='/login'>Login</Link>
+                </div>
             </form>
-
-            <div className={style.preview}>"{fullname}"</div> 
         </div>
   );
 

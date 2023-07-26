@@ -27,8 +27,8 @@ function App() {
           {/* <Route Component={LayoutTwo}> */}
             {/* <Route path="/future" element={<Future />} />
             <Route path="/future1" element={<Future1 />} />
-            <Route path="/login" element={<Login />} /> */}
-            <Route path="*" element={<Page404 />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="*" element={<Page404 />} /> */}
           {/* </Route> */}
         </Routes>
       </BrowserRouter>
