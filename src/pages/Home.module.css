@@ -1,15 +1,37 @@
 .home {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 3rem;
     align-items: center;
+    text-align: center;
 }
 .logo {
     width: 200px;
 }
 h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+
+}
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+}
+p {
+    font-size: 1rem;
+    text-align: center;
+}
+.link {
+    color: black;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 16rem;
 }
 .button {
     display: inline-block;

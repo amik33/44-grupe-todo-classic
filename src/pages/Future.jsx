@@ -1,10 +1,10 @@
-import style from './Future.module.css';
+import style from './Home.module.css';
 import { Link } from 'react-router-dom';
 
 
 export function Future () {
     return (
-        <div className={style.future}>
+        <div className={style.home}>
             <Link className={style.link} to='/login'>Skip</Link>
             <img src="../img/cap.png" alt="Future" />
             <h3>Future</h3>
