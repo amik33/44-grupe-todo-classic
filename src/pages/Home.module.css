@@ -1,1 +1,28 @@
-
+.home {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+.logo {
+    width: 200px;
+}
+h1 {
+    font-size: 3.5rem;
+}
+.button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 1rem 2.5rem;
+    background-color: green;
+    color: black;
+    line-height: 0.2rem;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    border: 0.1rem solid green;
+}
+.button:hover {
+    background-color: white;
+    color:black;
+}

@@ -1,14 +1,12 @@
-import { Header} from '../components/Header';
-import { Main } from '../components/Main';
-import { Footer } from '../components/Footer';
+import {Future } from '../pages/Future';
+
 
 
 export function Layout() {
     return (
         <>
-            <Header />
-            <Main />
-            <Footer />
+            <Future />
+         
         </>
     );
 }

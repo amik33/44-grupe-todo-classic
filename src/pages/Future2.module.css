@@ -1,12 +1,28 @@
-.footer {
+.future2 {
     display: flex;
-    width: 100%;
-    text-align: center;
-    background-color: #bbf;
-    color: #fff;
-    padding: 3rem;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
 }
-/* .button {
+.logo {
+    width: 200px;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1.5rem;
+}
+.link {
+    padding: 1rem 2rem;
+    background-color: #666af6;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+}
+.button {
     display: inline-block;
     font-size: 1rem;
     padding: 1rem 2.5rem;
@@ -20,4 +36,4 @@
 .button:hover {
     background-color: white;
     color:black;
-} */
+}

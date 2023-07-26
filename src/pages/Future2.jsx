@@ -1,15 +1,15 @@
-import style from './Future1.module.css';
+import style from './Future2.module.css';
 import { Link } from 'react-router-dom';
 
 
-export function Future1 () {
+export function Future2 () {
     return (
-    <div className={style.future1}>
+    <div className={style.future2}>
         <Link className={style.button} to='/login'>Skip</Link>
         <img src="../img/cap.png" alt="Future" />
-        <h3>Future 1</h3>
+        <h3>Future 2</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        <Link className={style.button} to='/future2'>Continue</Link>
+        <Link className={style.button} to='/create acaunt'>Continue</Link>
     </div>
     )
 };
