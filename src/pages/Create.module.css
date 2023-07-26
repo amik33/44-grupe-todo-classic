@@ -1,4 +1,4 @@
-.login {
+.create {
     display:flex;
     justify-content: space-between;
     flex-direction: column;
@@ -50,6 +50,7 @@ h3 {
     text-decoration: none;
     border-radius: 0.6rem;
     border: 0.1rem solid #0B0019;
+    user-select: none;
 }
 .button:hover {
     background-color: white;

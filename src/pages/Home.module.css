@@ -10,9 +10,12 @@
     width: 200px;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 2.3rem;
     padding: 2rem;
     text-align: center;
+}
+.noPageTitle {
+    font-size: 3.5rem;
 }
 h3 {
     font-size: 1.5rem;
@@ -29,6 +32,7 @@ p {
     text-decoration: none;
     font-size: 1rem;
     margin-left: 16rem;
+    user-select: none;
 }
 .button {
     display: inline-block;
@@ -40,6 +44,7 @@ p {
     text-decoration: none;
     border-radius: 0.6rem;
     border: 0.1rem solid #0B0019;
+    user-select: none;
 }
 .button:hover {
     background-color: white;

@@ -5,7 +5,7 @@ import logo from '../img/logo.png';
 export function Future1 () {
     return (
     <div className={style.home}>
-        <Link className={style.link} to='/login'>Skip</Link>
+        <Link className={style.link} to='/create'>Skip</Link>
         <img src={logo} alt="logo" />
         <h3>Future 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
