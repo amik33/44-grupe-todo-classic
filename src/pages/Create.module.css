@@ -32,12 +32,26 @@ h3 {
     justify-content: space-between;
     padding: 1rem 3rem;
 }
+.readContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.readTask {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+}
 .btn {
     display: inline-block;
     padding: 0.6rem;
     line-height: 0.2rem;
     border-radius: 0.3rem;
     border: 0.1rem solid #0B0019;
+}
+.logoContent {
+    width: 40%;
 }
 .button {
     display: flex;

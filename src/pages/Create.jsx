@@ -25,13 +25,13 @@ export function Create () {
             <form className={style.form}>
                 <h3>Create your account</h3>
                 <div className={style.row}>
-                    <input onChange={updateName} value={name} id='name' type='text' placeholder='Name...' />
+                    <input onChange={updateName} value={name} id='name' type='text' placeholder='Name' />
                 </div>
                 <div className={style.row}>
-                    <input onChange={updateEmail} value={email} id='email' type='text' placeholder='Email...' />
+                    <input onChange={updateEmail} value={email} id='email' type='text' placeholder='Email' />
                 </div>
                 <div className={style.row}>
-                    <input onChange={updatePassword} value={password} id='password' type='text' placeholder='Password...' />
+                    <input onChange={updatePassword} value={password} id='password' type='password' placeholder='Password' />
                 </div>
                 <div className={style.read}>
                     <Link className={style.btn} to='/team'></Link>

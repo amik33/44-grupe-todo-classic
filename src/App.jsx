@@ -6,6 +6,8 @@ import { Future2 } from './pages/Future2';
 import { Page404 } from './pages/Page404';
 import { Create } from './pages/Create';
 import { Login } from './pages/Login';
+import { Content } from './pages/Content';
+import { Tasks } from './pages/Tasks';
 // import { Layout } from './layout/Layout';
 // import { LayoutTwo } from './layout/LayoutTwo';
 
@@ -23,6 +25,8 @@ function App() {
             <Route path="/future2" element={<Future2 />} />
             <Route path="/create" element={<Create />} />
             <Route path="/login" element={<Login />} />
+            <Route path="/content" element={<Content />} />
+            <Route path="/tasks" element={<Tasks />} />
             <Route path="*" element={<Page404 />} />
           {/* </Route> */}
 
