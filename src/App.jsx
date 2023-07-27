@@ -8,6 +8,7 @@ import { Create } from './pages/Create';
 import { Login } from './pages/Login';
 import { Content } from './pages/Content';
 import { Tasks } from './pages/Tasks';
+import { Terms } from './pages/Terms';
 // import { Layout } from './layout/Layout';
 // import { LayoutTwo } from './layout/LayoutTwo';
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/content" element={<Content />} />
             <Route path="/tasks" element={<Tasks />} />
+            <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<Page404 />} />
           {/* </Route> */}
 

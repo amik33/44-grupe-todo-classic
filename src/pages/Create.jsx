@@ -34,7 +34,7 @@ export function Create () {
                     <input onChange={updatePassword} value={password} id='password' type='password' placeholder='Password' />
                 </div>
                 <div className={style.read}>
-                    <Link className={style.btn} to='/team'></Link>
+                    <Link className={style.btn} to='/terms'></Link>
                     <p>Agree to our TOS (read)</p>
                 </div>
                 <div className={style.row}>
