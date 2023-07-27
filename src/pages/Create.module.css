@@ -93,3 +93,13 @@ h3 {
     background-color: white;
     color:black;
 }
+.error {
+    display: none;
+    border: 0.1rem solid #f00;
+    background-color: #fcc;
+}
+.error.show {
+    display: block;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
