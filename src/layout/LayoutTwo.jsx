@@ -4,8 +4,7 @@
 
 export function LayoutTwo() {
     return (
-        <>
-           
+        <> 
         </>
     );
 }

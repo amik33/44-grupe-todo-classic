@@ -61,7 +61,6 @@ export function Create () {
             localStorage.setItem('users', JSON.stringify([...users, newUser]));
             navigate('/login');
         }    
-
     }
 
     return (

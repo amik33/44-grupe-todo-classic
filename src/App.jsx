@@ -28,13 +28,9 @@ function App() {
             <Route path="/tasks" element={<Tasks />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<Page404 />} />
-
           {/* <Route Component={Layout}> */} 
-
           {/* </Route> */}
-
           {/* <Route Component={LayoutTwo}> */}
-        
           {/* </Route> */}
         </Routes>
       </BrowserRouter>
