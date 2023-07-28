@@ -19,8 +19,6 @@ function App() {
       <BrowserRouter>
         <Routes>
             <Route index path="/" element={<Home />} /> 
-
-          {/* <Route Component={Layout}> */}
             <Route path="/future" element={<Future />} />
             <Route path="/future1" element={<Future1 />} />
             <Route path="/future2" element={<Future2 />} />
@@ -30,6 +28,9 @@ function App() {
             <Route path="/tasks" element={<Tasks />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<Page404 />} />
+
+          {/* <Route Component={Layout}> */} 
+
           {/* </Route> */}
 
           {/* <Route Component={LayoutTwo}> */}

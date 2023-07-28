@@ -1,70 +1,137 @@
-# Getting Started with Create React App
+![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
+![Security Status](https://img.shields.io/security-headers?label=Security&url=https%3A%2F%2Fgithub.com&style=flat-square)
+![Gluten Status](https://img.shields.io/badge/Gluten-Free-green.svg)
+![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
+[![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Astronautas
 
-## Available Scripts
+_todo classic project-cra_
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
+## 🌟 About
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Site published at: https://github.com/amik33/44-grupe-todo-classic/
 
-### `npm test`
+## 🎯 Project features/goals
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   Github pages
+-   README / [markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+-   register form
+-   content rendering
+-   navigation
+-   saving data to localstorage
+-   pseudo-elements
 
-### `npm run build`
+## 🧰 Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 💻 Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Node.js - _download and install_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+https://nodejs.org
+```
 
-### `npm run eject`
+Git - _download and install_
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+https://git-scm.com
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🏃 Run locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Would like to run this project locally? Open terminal and follow these steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repo
+    ```sh
+    git clone https://github.com/amik33/44-grupe-todo-classic
+    ```
+2. Install NPM packages
+    ```sh
+    npm i
+    ```
+    or
+    ```sh
+    npm install
+    ```
+3. Run the server
+    ```sh
+    npm run dev
+    ```
 
-## Learn More
+### 🧪 Running tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+There is no tests for this project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎅 Authors
 
-### Code Splitting
+Arunas: [Github](https://github.com/amik33)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## ⚠️ License
 
-### Analyzing the Bundle Size
+Distributed under the MIT License. See LICENSE.txt for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔗 Other resources
 
-### Making a Progressive Web App
+my-app
+├── README.md
+├── node_modules
+├── package.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── App.jsx
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## 🌟 Register user
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. User form:
 
-### Deployment
+    ```
+    name: 'username'
+    email: 'username@page.com'
+    password: "************"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    ```
 
-### `npm run build` fails to minify
+3. Response if any error:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ```
+    Err msg: 'Error: username'
+    Err msg: 'Error: email'
+    Err msg: 'Error: password'
+   
+    ```
+
+## 🌟 Login
+
+1. Fill form:
+
+    ```
+    email: 'username@page.com'
+    password: '************'
+
+    ```
+2. Response if any error:
+
+    ```
+    Err msg: 'Error: email'
+    Err msg: 'Error: password'
+
+    ```
+## 🌟 No page error
+
+    ```
+    '404 page not found'
+
+    ```
