@@ -69,7 +69,7 @@ export function Create () {
                     <input onChange={updatePassword} value={password} id='password' type='password' placeholder='Password' />
                 </div>
                 <div className={`${style.error} ${errors.length ? style.show : ''}`}>
-                    {errors.map(err => <p>{err}</p>)}
+                    {errors.map(err => <p key={username}>{err}</p>)}
                 </div>
                 <div className={style.read}>
                     <Link className={style.btn} to='/terms'></Link>
