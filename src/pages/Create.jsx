@@ -60,11 +60,9 @@ export function Create () {
             setUsers((prev) => [...prev, newUser]);
             localStorage.setItem('users', JSON.stringify([...users, newUser]));
             navigate('/login');
-
         }    
 
     }
-
 
     return (
         <div className={style.create}>

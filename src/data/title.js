@@ -31,9 +31,4 @@ export const  titleData = [
         id:8,
         title: 'Settings'
     },
-    {
-        id:9,
-        title: 'Sign out'
-    },
-
 ]

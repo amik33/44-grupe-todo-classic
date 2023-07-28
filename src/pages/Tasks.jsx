@@ -9,11 +9,14 @@ export function Tasks () {
     return (
         <div className={style.Create}>
             <div className={style.readTask}>
-                <Link className={style.link} to='/content'><HiOutlineX size='5rem' color='#000' /></Link>
+                <Link className={style.link} to='/content'><HiOutlineX size='4rem' color='#000' /></Link>
             </div>
             <div className={style.form}>
                 {titleData.map((title, i) => <p className={((i +1)% 3 === 0 && i !== 0) ? stylePseudo.readTitle : style.readTitle}
-                key={title.id}><BsCircle size='1.5rem' color='#000' />{title.title}</p>)}
+                key={title.id}><BsCircle  size='1.5rem' color='#000' />{title.title}</p>)}
+            </div>
+            <div className={style.dotLink}>
+                <Link className={style.signOut} to='/'><BsCircle  size='1.5rem' color='#000' /><p>Sign out</p></Link>
             </div>
         </div>
     )

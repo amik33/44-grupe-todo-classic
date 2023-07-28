@@ -51,10 +51,7 @@ export function Login () {
             setUsers((prev) => [...prev, newUser]);
             localStorage.setItem('users', JSON.stringify([...users, newUser]));
             navigate('/content');
-
         }    
-
-
     }
 
     return (
@@ -78,5 +75,4 @@ export function Login () {
             </form>
         </div>
     );
-
 }
