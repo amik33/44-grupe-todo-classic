@@ -1,6 +1,6 @@
 import style from './Create.module.css';
 import { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 
@@ -9,6 +9,7 @@ export function Login () {
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState([]);
     const [users, setUsers] = useState(() => JSON.parse(localStorage.getItem('users')) || []);
+    const navigate = useNavigate();
 
     useEffect(() => {
         localStorage.setItem('users', JSON.stringify(users));
@@ -44,6 +45,16 @@ export function Login () {
         if (!errors.length) {
             setUsers((prev) => [...prev, { email, password }]);
         }
+
+        if (newErrors.length === 0) {
+            const newUser = { email, password };
+            setUsers((prev) => [...prev, newUser]);
+            localStorage.setItem('users', JSON.stringify([...users, newUser]));
+            navigate('/content');
+
+        }    
+
+
     }
 
     return (
@@ -60,7 +71,7 @@ export function Login () {
                     {errors.map(err => <p key={password}>{err}</p>)}
                 </div>
                 <div className={style.rowLog}>
-                    <Link onClick={loginUser} className={style.button} to='/content'>Log in</Link>
+                    <Link onClick={loginUser} className={style.button}>Log in</Link>
                     <p className={style.rowLog}>or</p>
                     <Link className={style.button} to='/create'>Register</Link>
                 </div>

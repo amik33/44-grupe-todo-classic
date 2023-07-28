@@ -27,13 +27,13 @@ export function Create () {
     }
 
     function createUser(event) {
-        event.preventDefault();
         const minUsernameLength = 3;
         const maxUsernameLength = 20;
         const minEmailLength = 6;
         const maxEmailLength = 30;
         const minPasswordLength = 6;
         const maxPasswordLength = 100;
+        event.preventDefault();
         
 
         const newErrors = [];
@@ -54,7 +54,14 @@ export function Create () {
         if (!errors.length) {
             setUsers((prev) => [...prev, { username, email, password }]);
         }
-        navigate('/login');
+
+        if (newErrors.length === 0) {
+            const newUser = { username, email, password };
+            setUsers((prev) => [...prev, newUser]);
+            localStorage.setItem('users', JSON.stringify([...users, newUser]));
+            navigate('/login');
+
+        }    
 
     }
 
@@ -64,13 +71,13 @@ export function Create () {
             <form className={style.form}>
                 <h3>Create your account</h3>
                 <div className={style.row}>
-                    <input onChange={updateUsername} value={username} id='name' type='text' placeholder='Name'  />
+                    <input onChange={updateUsername} value={username} id='name' type='text' placeholder='Name' />
                 </div>
                 <div className={style.row}>
-                    <input onChange={updateEmail} value={email} id='email' type='text' placeholder='Email'  />
+                    <input onChange={updateEmail} value={email} id='email' type='text' placeholder='Email' />
                 </div>
                 <div className={style.row}>
-                    <input onChange={updatePassword} value={password} id='password' type='password' placeholder='Password'  />
+                    <input onChange={updatePassword} value={password} id='password' type='password' placeholder='Password' />
                 </div>
                 <div className={`${style.error} ${errors.length ? style.show : ''}`}>
                     {errors.map(err => <p key={username}>{err}</p>)}
