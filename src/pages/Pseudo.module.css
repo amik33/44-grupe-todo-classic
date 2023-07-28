@@ -1,0 +1,15 @@
+.readTitle {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 2rem;
+    padding: 0.5rem 3rem;
+}
+.readTitle:not(:last-child):after {
+    content: '';
+    width: 5rem;
+    height: 0.2rem;
+    background-color:#000;
+    display: block;
+    margin-top: 4rem;
+    align-content: flex-start;
+}

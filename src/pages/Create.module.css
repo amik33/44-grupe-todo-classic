@@ -12,6 +12,9 @@ h3 {
     text-align: left;
     padding: 0.5rem 3rem;
 }
+p {
+    font-size: 1.2rem;
+}
 .form {
     display: grid;
     gap: 1rem;
@@ -20,6 +23,13 @@ h3 {
     display: grid;
     gap: 3rem;
     padding: 1rem 3rem;
+}
+.rowLog {
+    display: grid;
+    gap: 1rem;
+    padding: 2rem 3rem;
+    font-size: 1.2rem;
+    
 }
 .form input {
     padding: 0.3rem 0.5rem;
@@ -51,6 +61,12 @@ h3 {
     align-items: center;
     justify-content: flex-end;
     padding: 1rem;
+}
+.readTitle {
+    display: flex;
+    font-size: 1.3rem;
+    gap: 2rem;
+    padding: 0.5rem 3rem;
 }
 .btn {
     display: inline-block;

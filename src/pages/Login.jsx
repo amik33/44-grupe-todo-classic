@@ -50,17 +50,18 @@ export function Login () {
         <div className={style.create}>
             <form className={style.form}>
                 <h3>Log in to your account</h3>
-                <div className={style.row}>
+                <div className={style.rowLog}>
                     <input onChange={updateEmail} value={email} id='email' type='text' placeholder='Email' />
                 </div>
-                <div className={style.row}>
+                <div className={style.rowLog}>
                     <input onChange={updatePassword} value={password} id='password' type='password' placeholder='Password' />
                 </div>
                 <div className={`${style.error} ${errors.length ? style.show : ''}`}>
                     {errors.map(err => <p key={password}>{err}</p>)}
                 </div>
-                <div className={style.row}>
+                <div className={style.rowLog}>
                     <Link onClick={loginUser} className={style.button} to='/content'>Log in</Link>
+                    <p className={style.rowLog}>or</p>
                     <Link className={style.button} to='/create'>Register</Link>
                 </div>
             </form>

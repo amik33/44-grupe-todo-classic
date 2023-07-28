@@ -5,7 +5,9 @@ import logo from '../img/logo.png';
 export function Future () {
     return (
         <div className={style.home}>
-            <Link className={style.link} to='/create'>Skip</Link>
+            <div>
+                <Link className={style.link} to='/create'>Skip</Link>
+            </div>
             <img src={logo} alt="logo" />
             <h3>Future</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>         

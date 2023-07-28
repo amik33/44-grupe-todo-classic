@@ -1,6 +1,6 @@
 import style from './Create.module.css';
 import { useState, useEffect } from "react";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 export function Create () {
     const [username, setUsername] = useState('');
@@ -8,6 +8,7 @@ export function Create () {
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState([]);
     const [users, setUsers] = useState(() => JSON.parse(localStorage.getItem('users')) || []);
+    const navigate = useNavigate();
 
     useEffect(() => {
         localStorage.setItem('users', JSON.stringify(users));
@@ -26,13 +27,14 @@ export function Create () {
     }
 
     function createUser(event) {
+        event.preventDefault();
         const minUsernameLength = 3;
         const maxUsernameLength = 20;
         const minEmailLength = 6;
         const maxEmailLength = 30;
         const minPasswordLength = 6;
         const maxPasswordLength = 100;
-        event.preventDefault();
+        
 
         const newErrors = [];
         if (username.length < minUsernameLength || username.length > maxUsernameLength) {
@@ -52,6 +54,8 @@ export function Create () {
         if (!errors.length) {
             setUsers((prev) => [...prev, { username, email, password }]);
         }
+        navigate('/login');
+
     }
 
 
@@ -60,13 +64,13 @@ export function Create () {
             <form className={style.form}>
                 <h3>Create your account</h3>
                 <div className={style.row}>
-                    <input onChange={updateUsername} value={username} id='name' type='text' placeholder='Name' />
+                    <input onChange={updateUsername} value={username} id='name' type='text' placeholder='Name'  />
                 </div>
                 <div className={style.row}>
-                    <input onChange={updateEmail} value={email} id='email' type='text' placeholder='Email' />
+                    <input onChange={updateEmail} value={email} id='email' type='text' placeholder='Email'  />
                 </div>
                 <div className={style.row}>
-                    <input onChange={updatePassword} value={password} id='password' type='password' placeholder='Password' />
+                    <input onChange={updatePassword} value={password} id='password' type='password' placeholder='Password'  />
                 </div>
                 <div className={`${style.error} ${errors.length ? style.show : ''}`}>
                     {errors.map(err => <p key={username}>{err}</p>)}
@@ -76,7 +80,8 @@ export function Create () {
                     <p>Agree to our TOS (read)</p>
                 </div>
                 <div className={style.row}>
-                    <Link onClick={createUser} className={style.button} to='/login'>Register</Link>
+                    <Link onClick={createUser} className={style.button}>Register</Link>
+                    <p>or</p>
                     <Link className={style.button} to='/login'>Login</Link>
                 </div>
             </form>
