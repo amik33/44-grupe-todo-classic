@@ -1,5 +1,5 @@
 import style from './Create.module.css';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
 
@@ -7,16 +7,44 @@ import { Link } from 'react-router-dom';
 export function Login () {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    // const registr = `${email} ${password}`.trim();
-  
-  
+    const [errors, setErrors] = useState([]);
+    const [users, setUsers] = useState(() => JSON.parse(localStorage.getItem('users')) || []);
+
+    useEffect(() => {
+        localStorage.setItem('users', JSON.stringify(users));
+    }, [users]);
+
     function updateEmail(event) {
-      setEmail(event.target.value);
+        setEmail(event.target.value);
     }
 
     function updatePassword(event) {
         setPassword(event.target.value);
-      }
+    }
+
+    function loginUser(event) {
+        const minEmailLength = 6;
+        const maxEmailLength = 30;
+        const minPasswordLength = 6;
+        const maxPasswordLength = 100;
+        event.preventDefault();
+
+        const newErrors = [];
+
+        if (email.length < minEmailLength || email.length > maxEmailLength) {
+            newErrors.push('Error: email');
+        }
+
+        if (password.length < minPasswordLength || password.length > maxPasswordLength) {
+            newErrors.push('Error: password');
+        }
+
+        setErrors(newErrors);
+
+        if (!errors.length) {
+            setUsers((prev) => [...prev, { email, password }]);
+        }
+    }
 
     return (
         <div className={style.create}>
@@ -28,12 +56,15 @@ export function Login () {
                 <div className={style.row}>
                     <input onChange={updatePassword} value={password} id='password' type='password' placeholder='Password' />
                 </div>
+                <div className={`${style.error} ${errors.length ? style.show : ''}`}>
+                    {errors.map(err => <p key={password}>{err}</p>)}
+                </div>
                 <div className={style.row}>
-                    <Link className={style.button} to='/content'>Log in</Link>
+                    <Link onClick={loginUser} className={style.button} to='/content'>Log in</Link>
                     <Link className={style.button} to='/create'>Register</Link>
                 </div>
             </form>
         </div>
-  );
+    );
 
 }

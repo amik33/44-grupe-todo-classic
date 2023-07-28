@@ -12,7 +12,7 @@ export function Content () {
                 <Link className={style.link} to='/tasks'><HiOutlineMenu size='5rem' color='#000' /></Link>
             </div>
             <div className={style.form}>
-                {tasksData.map(task => <p key={task.id}>{task.id}) {task.text}</p>)}
+                {tasksData.map(task => <p className={style.read} key={task.id}>{task.id}) {task.text}</p>)}
             </div>
         </div>
     )

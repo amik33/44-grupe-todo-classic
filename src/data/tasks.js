@@ -5,7 +5,7 @@ export const tasksData = [
     },
     {
         id: 2,
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing.',
+        text: 'Lorem, ipsum dolor sit amet consectetur.',
     },
     {
         id: 3,
@@ -13,7 +13,7 @@ export const tasksData = [
     },
     {
         id: 4,
-        text: 'Lorem, ipsum dolor sit amet consectetur adipisicing.',
+        text: 'Lorem, ipsum dolor sit amet .',
     },
     {
         id:5,

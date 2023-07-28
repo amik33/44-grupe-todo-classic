@@ -1,6 +1,8 @@
 import style from './Create.module.css';
 import { Link } from 'react-router-dom';
 import { HiOutlineX } from 'react-icons/hi';
+import { BsCircle } from 'react-icons/bs';
+import { titleData } from '../data/title';
 
 export function Tasks () {
     return (
@@ -8,8 +10,9 @@ export function Tasks () {
             <div className={style.readTask}>
                 <Link className={style.link} to='/content'><HiOutlineX size='5rem' color='#000' /></Link>
             </div>
-                TASK CONTENT
-                
+            <div className={style.form}>
+                {titleData.map(title => <p className={style.info} key={title.id}><BsCircle />{title.title}</p>)}
+            </div>
         </div>
     )
 };
