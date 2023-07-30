@@ -129,9 +129,10 @@ my-app
     Err msg: 'Error: password'
 
     ```
+
 ## 🌟 No page error
 
-    ```
-    '404 page not found'
 
-    ```
+   '404 page not found'
+
+ 

@@ -127,6 +127,7 @@ p {
 .error {
     display: none;
     border: 0.1rem solid #f00;
+    border-radius: 0.6rem;
     background-color: #fcc;
 }
 .error.show {
