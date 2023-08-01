@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    align-items: center;
+}
+.burgerOf {
+    display: flex;
+    flex-direction: column;
+    display: none;
+    padding: 2rem;
+    align-items: flex-start;
+}
+.logo {
+    width: 30%;
+}
+.titlePlace {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 2rem;
+}
+.outline {
+    margin-left: 16rem;
+}

@@ -1,34 +1,47 @@
 export const  titleData = [
     {
         id:1,
-        title: 'Shopping carts'
+        title: 'Shopping carts',
+        link: '',
     },
     {
         id:2,
-        title: 'Product catalog'
+        title: 'Product catalog',
+        link: '',
     },
     {
         id:3,
         title: 'Shops',
+        link: '',
     },
     {
         id:4,
-        title: 'New shopping cart'
+        title: 'New shopping cart',
+        link: '',
     },
     {
         id:5,
-        title: 'New product'
+        title: 'New product',
+        link: '',
     },
     {
         id:6,
         title: 'New shop',
+        link: '',
     },
     {
         id:7,
-        title: 'Account'
+        title: 'Account',
+        link: '',
     },
     {
         id:8,
-        title: 'Settings'
+        title: 'Settings',
+        link: '',
+    },
+    {
+        id:9,
+        title: 'Sign out',
+        link: '',
     },
 ]
