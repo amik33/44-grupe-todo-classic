@@ -53,7 +53,7 @@ export function AccountLayout() {
             id:'m23',
             icon: <FaHouseUser size='1.3rem'/>,
             title: 'New shop',
-            url: '/new shop',
+            url: '/newShop',
         },
         {
             type: 'line',

@@ -10,6 +10,7 @@ import { Content } from './pages/Content';
 import { Terms } from './pages/Terms';
 import { AccountLayout } from './layout/AccountLayout';
 import { Shops } from './pages/shopPages/Shops';
+import { NewShop } from './pages/shopPages/NewShop';
 
 
 
@@ -29,6 +30,7 @@ function App() {
           <Route Component={AccountLayout} >
             <Route path="/content" element={<Content />} />
             <Route path="/shops" element={<Shops />} />
+            <Route path="/newShop" element={<NewShop />} />
           </Route>
           <Route path="*" element={<Page404 />} />
         </Routes>
