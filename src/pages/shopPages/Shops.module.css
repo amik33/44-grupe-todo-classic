@@ -1,11 +1,5 @@
-.create {
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 3rem;
-    padding: 1rem;
-    align-items: center;
-    text-align: center;
+.shops {
+    background-color: #ccc;
 }
 h3 {
     font-size: 2rem;
@@ -124,14 +118,4 @@ p {
     background-color: white;
     color:black;
 }
-.error {
-    display: none;
-    border: 0.1rem solid #f00;
-    border-radius: 0.6rem;
-    background-color: #fcc;
-}
-.error.show {
-    display: block;
-    margin-left: 3rem;
-    margin-right: 3rem;
-}
+

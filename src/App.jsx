@@ -7,11 +7,10 @@ import { Page404 } from './pages/Page404';
 import { Create } from './pages/Create';
 import { Login } from './pages/Login';
 import { Content } from './pages/Content';
-// import { Tasks } from './pages/Tasks';
 import { Terms } from './pages/Terms';
-import { Burger } from './components/Burger';
-// import { Layout } from './layout/Layout';
-// import { LayoutTwo } from './layout/LayoutTwo';
+import { AccountLayout } from './layout/AccountLayout';
+import { Shops } from './pages/shopPages/Shops';
+
 
 
 function App() {
@@ -25,15 +24,13 @@ function App() {
             <Route path="/future2" element={<Future2 />} />
             <Route path="/create" element={<Create />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/content" element={<Content />} />
-            {/* <Route path="/tasks" element={<Tasks />} /> */}
             <Route path="/terms" element={<Terms />} />
-            <Route path="/burger" element={<Burger />} />
-            <Route path="*" element={<Page404 />} />
-          {/* <Route Component={Layout}> */} 
-          {/* </Route> */}
-          {/* <Route Component={LayoutTwo}> */}
-          {/* </Route> */}
+
+          <Route Component={AccountLayout} >
+            <Route path="/content" element={<Content />} />
+            <Route path="/shopPages/shops" element={<Shops />} />
+          </Route>
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </div>
