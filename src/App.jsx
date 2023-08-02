@@ -28,7 +28,7 @@ function App() {
 
           <Route Component={AccountLayout} >
             <Route path="/content" element={<Content />} />
-            <Route path="/shopPages/shops" element={<Shops />} />
+            <Route path="/shops" element={<Shops />} />
           </Route>
           <Route path="*" element={<Page404 />} />
         </Routes>

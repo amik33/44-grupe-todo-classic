@@ -8,9 +8,9 @@ export function Shops () {
         <div className={style.shops}>
             <h1>Shops</h1>
             <div className={style.form}>
-                {shopsData.map(shop => <Shops key={shop.id} />) }
+                {shopsData.map(shop => <p key={shop.id}>{shop.id}) {shop.name} {shop.workTime} {shop.url}</p>)};
             </div>
-            <Link className={style.button} to='/'>Get Started</Link>
+            <Link to='/'>Go home</Link>
         </div>
     )
 };
