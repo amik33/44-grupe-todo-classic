@@ -12,7 +12,12 @@ import { AccountLayout } from './layout/AccountLayout';
 import { Shops } from './pages/shopPages/Shops';
 import { NewShop } from './pages/shopPages/NewShop';
 import { ProductCatalog } from './pages/shopPages/ProductCatalog';
-
+import { NewProduct } from './pages/shopPages/NewProduct';
+import { ShoppingCarts } from './pages/shopPages/ShoppingCarts';
+import { NewShoppingCart } from './pages/shopPages/NewShoppingCart';
+import { Account } from './pages/shopPages/Account';
+import { Settings } from './pages/shopPages/Settings';
+import { SignOut } from './pages/shopPages/SignOut';
 
 function App() {
   return (
@@ -32,8 +37,14 @@ function App() {
             <Route path="/shops" element={<Shops />} />
             <Route path="/newShop" element={<NewShop />} />
             <Route path="/productCatalog" element={<ProductCatalog />} />
+            <Route path="/newProduct" element={<NewProduct />} />
+            <Route path="/shoppingCarts" element={<ShoppingCarts />} />
+            <Route path="/newShoppingCart" element={<NewShoppingCart />} />
+            <Route path="/account" element={<Account />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/signOut" element={<SignOut />} />
           </Route>
-          
+
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>

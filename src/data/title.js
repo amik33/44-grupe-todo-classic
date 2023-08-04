@@ -7,7 +7,7 @@ export const  titleData = [
         id: 'm11',
         icon: <FaShoppingCart size='1.3rem' />,
         title: 'Shopping carts',
-        url: '/future',
+        url: '/shoppingCarts',
     },
     {
         type: 'link',
@@ -31,14 +31,14 @@ export const  titleData = [
         id:'m21',
         icon: <FaShoppingCart size='1.3rem' />,
         title: 'New shopping cart',
-        url: '/new shopping',
+        url: '/newShoppingCart',
     },
     {
         type: 'link',
         id:'m22',
         icon: <FaProductHunt size='1.3rem'/>,
         title: 'New product',
-        url: '/new product',
+        url: '/newProduct',
     },
     {
         type: 'link',
@@ -69,6 +69,6 @@ export const  titleData = [
         id:'m33',
         icon: <MdLogout size='1.3rem'/>,
         title: 'Sign out',
-        url: '/',
+        url: '/signOut',
     },
 ]
