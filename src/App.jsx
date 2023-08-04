@@ -11,7 +11,7 @@ import { Terms } from './pages/Terms';
 import { AccountLayout } from './layout/AccountLayout';
 import { Shops } from './pages/shopPages/Shops';
 import { NewShop } from './pages/shopPages/NewShop';
-
+import { ProductCatalog } from './pages/shopPages/ProductCatalog';
 
 
 function App() {
@@ -31,7 +31,9 @@ function App() {
             <Route path="/content" element={<Content />} />
             <Route path="/shops" element={<Shops />} />
             <Route path="/newShop" element={<NewShop />} />
+            <Route path="/productCatalog" element={<ProductCatalog />} />
           </Route>
+          
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
